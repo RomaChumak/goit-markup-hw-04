@@ -113,6 +113,7 @@ body {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
   padding-top: 185px;
   padding-bottom: 185px;
 }
@@ -268,6 +269,9 @@ body {
 }
 .team-lis {
   margin: 0 24px 0 0;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .contur {
   background-color: #ffffff;
@@ -318,30 +322,28 @@ body {
   display: flex;
   gap: 24px;
 }
-.customers-item-icon {
+
+.customers-link-icon {
   width: 168px;
   height: 88px;
+  display: block;
   border: 1px solid#8e8f99;
   border-radius: 4px;
-}
-.customers-link-icon {
-  width: 104px;
-  height: 56px;
   padding: 16px 32px 16px 32px;
-  display: block;
-  color: #8e8f99;
 }
-.customers-item-icon:hover,
-.customers-item-icon:focus {
-  border: 1px solid #404bbf;
-  border-radius: 4px;
-}
+
 .customers-icon {
-  color: currentColor;
+  fill: #8e8f99;
 }
-.customers-icon:hover,
-.customers-icon:focus {
-  color: #404bbf;
+.customers-link-icon:hover,
+.customers-link-icon:focus {
+  border: 1px solid #404bbf;
+}
+.customers-link-icon:hover .customers-icon {
+  fill: #404bbf;
+}
+.customers-link-icon:focus .customers-icon {
+  fill: #404bbf;
 }
 /* footer */
 .footer {
@@ -468,6 +470,11 @@ body {
   row-gap: 48px;
   column-gap: 24px;
   margin-top: 72px;
+}
+.portfolio-item:focus,
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-blok {
   padding: 32px 16px 32px;
