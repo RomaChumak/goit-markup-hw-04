@@ -105,6 +105,7 @@ body {
 }
 /*  hero */
 .hero {
+  max-width: 1440px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -112,10 +113,10 @@ body {
     ),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: center;
   padding-top: 185px;
   padding-bottom: 185px;
+  margin: 0 auto;
 }
 .hero-title {
   width: 496px;
